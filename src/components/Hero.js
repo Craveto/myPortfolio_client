@@ -1,5 +1,6 @@
 import React from 'react';
 import './Hero.css';
+import myImg from './img/myImg.jpg';
 
 const Hero = () => {
   return (
@@ -17,9 +18,10 @@ const Hero = () => {
         </div>
 
         {/* Right: Image placeholder */}
-        <div className="hero-image">
-          <div className="image-placeholder">my profile photo</div>
+        <div className="hero-image image-placeholder">
+          <img src={myImg} alt="Snehal Dighore" className="profile-photo" />
         </div>
+
       </div>
     </section>
   );
