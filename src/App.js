@@ -1,5 +1,8 @@
 import React, { useEffect } from 'react';
 import axios from 'axios';
+import './App.css';
+import Navbar from './components/Navbar';
+import Hero from './components/Hero';
 
 function App() {
   useEffect(() => {
@@ -14,7 +17,8 @@ function App() {
 
   return (
     <div className="App">
-      <h1>Portfolio Project</h1>
+      <Navbar />
+      <Hero />
     </div>
   );
 }
