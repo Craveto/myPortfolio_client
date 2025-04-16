@@ -1,6 +1,9 @@
 import React, { useState } from 'react';
 import './Navbar.css';
 import { FiMenu, FiX } from 'react-icons/fi';
+// import SnehalLogo from './SnehalLogo.svg';
+import TypingName from './TypingName';
+
 
 const Navbar = () => {
   const [active, setActive] = useState('Academics');
@@ -15,7 +18,9 @@ const Navbar = () => {
   return (
     <nav className="navbar">
       <div className="navbar-container">
-        <h2 className="logo">Snehal</h2>
+        {/* <h2 className="logo"> */}
+        <TypingName />
+        {/* </h2> */}
 
         <div className="hamburger" onClick={toggleMobileMenu}>
           {mobileMenuOpen ? <FiX size={24} /> : <FiMenu size={24} />}

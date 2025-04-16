@@ -1,0 +1,33 @@
+<svg width="150" height="30" viewBox="0 0 150 30" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .text {
+      font: bold 20px 'Segoe UI', sans-serif;
+      fill: #4B4BFF;
+    }
+
+    .cursor {
+      animation: blink 2s steps(12, start) infinite;
+      fill: #4B4BFF;
+    }
+
+    @keyframes blink {
+      to { fill: transparent; }
+    }
+
+    @keyframes typing {
+      from { width: 0 }
+      to { width: 100% }
+    }
+
+    .typing {
+      overflow: hidden;
+      white-space: nowrap;
+      animation: typing 1s steps(6) forwards;
+    }
+  </style>
+  <foreignObject x="0" y="0" width="150" height="30">
+    <div xmlns="http://www.w3.org/1999/xhtml" class="typing text">
+      Snehal<span class="cursor">...</span>
+    </div>
+  </foreignObject>
+</svg>

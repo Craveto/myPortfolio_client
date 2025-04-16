@@ -1,0 +1,52 @@
+<div class="typing-container">
+  <svg viewBox="0 0 500 100" class="typing-svg">
+    <text x="0" y="60" class="typing-text">Snehal</text>
+  </svg>
+  <span class="cursor">|</span>
+</div>
+
+<style>
+  .typing-container {
+    display: flex;
+    align-items: center;
+    font-family: 'Courier New', monospace;
+  }
+
+  .typing-svg {
+    width: 400px;
+    height: 100px;
+  }
+
+  .typing-text {
+    font-size: 60px;
+    fill: black;
+    animation: typing 2s steps(6) forwards;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+
+  .cursor {
+    font-size: 60px;
+    color: black;
+    animation: blink 0.7s step-end infinite;
+    margin-left: 5px;
+  }
+
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+    to {
+      width: 8ch;
+    }
+  }
+
+  @keyframes blink {
+    0%, 100% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+    }
+  }
+</style>

@@ -5,6 +5,7 @@ import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import About from './components/About';
 import Projects from './components/Projects';
+import ParticlesBackground from './components/ParticlesBackground';
 
 function App() {
   useEffect(() => {
@@ -19,6 +20,7 @@ function App() {
 
   return (
     <div className="App">
+      <ParticlesBackground />
       <Navbar />
       <Hero />
       <About/>

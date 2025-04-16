@@ -1,29 +1,42 @@
 .projects {
   padding: 4rem 2rem;
-  background-color: #f8fafc;
-  text-align: center;
+  width: 66%;
+  margin: 4px auto;
+  /* background: linear-gradient(to bottom, #f8fafc, #e0e7ff); */
 }
 
 .projects-title {
+  text-align: center;
   font-size: 2.5rem;
+  color: #e0e7ff;
   font-weight: 700;
-  color: #1e293b;
   margin-bottom: 2rem;
 }
 
-.projects-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 2rem;
+/* Slider Container */
+.slider-container {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  scroll-snap-type: x mandatory;
 }
 
+.slider-track {
+  display: flex;
+  gap: 1.5rem;
+  padding-bottom: 1rem;
+  scroll-behavior: smooth;
+}
+
+/* Card */
 .project-card {
+  min-width: 300px;
+  max-width: 300px;
   background: #ffffff;
   border-radius: 16px;
-  overflow: hidden;
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  scroll-snap-align: center;
   transition: transform 0.3s ease;
-  animation: fadeInUp 1s ease;
+  flex-shrink: 0;
 }
 
 .project-card:hover {
@@ -32,61 +45,69 @@
 
 .project-image {
   width: 100%;
-  height: 180px;
+  height: 160px;
   object-fit: cover;
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
 }
 
 .project-content {
-  padding: 1.5rem;
+  padding: 1.2rem;
 }
 
 .project-content h3 {
-  font-size: 1.3rem;
-  color: #111827;
+  font-size: 1.25rem;
+  font-weight: 600;
   margin-bottom: 0.5rem;
+  color: #1e293b;
 }
 
 .project-content p {
-  color: #4b5563;
-  font-size: 1rem;
+  font-size: 0.95rem;
+  color: #475569;
   margin-bottom: 1rem;
 }
 
 .tech-stack {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.5rem;
-  justify-content: center;
+  gap: 0.4rem;
   margin-bottom: 1rem;
 }
 
 .tech-stack span {
-  background-color: #e0e7ff;
-  color: #3730a3;
-  font-size: 0.85rem;
-  padding: 0.3rem 0.7rem;
+  background: #e0e7ff;
+  color: #4338ca;
+  font-size: 0.75rem;
+  padding: 0.25rem 0.6rem;
   border-radius: 999px;
 }
 
 .project-links a {
-  margin: 0 0.5rem;
   text-decoration: none;
-  font-weight: 600;
+  font-weight: 500;
   color: #6366f1;
-  transition: color 0.3s;
+  margin-right: 1rem;
+  font-size: 0.9rem;
 }
 
 .project-links a:hover {
-  color: #4338ca;
+  text-decoration: underline;
 }
 
-@keyframes fadeInUp {
-  from {
-    opacity: 0;
-    transform: translateY(30px);
+/* Responsive Tweaks */
+@media (max-width: 768px) {
+  .projects-title {
+    font-size: 2rem;
   }
-  to {
-    opacity: 1;
-    transform: translateY(0);
+
+  .project-card {
+    min-width: 90%;
+    max-width: 90%;
+    margin: auto;
+  }
+
+  .slider-track {
+    gap: 1rem;
   }
 }
