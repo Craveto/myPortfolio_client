@@ -6,6 +6,8 @@ import Hero from './components/Hero';
 import About from './components/About';
 import Projects from './components/Projects';
 import ParticlesBackground from './components/ParticlesBackground';
+import Academics from './components/Academics';
+import Skills from './components/Skills';
 
 function App() {
   useEffect(() => {
@@ -25,6 +27,8 @@ function App() {
       <Hero />
       <About/>
       <Projects/>
+      <Academics />
+      <Skills />
     </div>
   );
 }

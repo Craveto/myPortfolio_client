@@ -9,7 +9,7 @@ const Navbar = () => {
   const [active, setActive] = useState('Academics');
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
-  const navItems = ['Home', 'Github', 'Projects', 'Academics'];
+  const navItems = ['Home','Contact', 'Github', 'Projects', 'Academics'];
 
   const toggleMobileMenu = () => {
     setMobileMenuOpen(!mobileMenuOpen);
@@ -34,6 +34,11 @@ const Navbar = () => {
               onClick={() => {
                 setActive(item);
                 setMobileMenuOpen(false); // close menu after click
+
+                const section = document.getElementById(item.toLowerCase());
+                if (section) {
+                  section.scrollIntoView({ behavior: 'smooth' });
+                }
               }}
             >
               {item}
