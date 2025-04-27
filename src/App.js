@@ -8,6 +8,8 @@ import Projects from './components/Projects';
 import ParticlesBackground from './components/ParticlesBackground';
 import Academics from './components/Academics';
 import Skills from './components/Skills';
+import Footer from './components/Footer';
+// import Contact from './components/ContactModal';
 
 function App() {
   useEffect(() => {
@@ -29,6 +31,9 @@ function App() {
       <Projects/>
       <Academics />
       <Skills />
+
+      <Footer />
+      
     </div>
   );
 }

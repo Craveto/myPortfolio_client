@@ -1,6 +1,9 @@
 .skills {
-    padding: 4rem 2rem;
-    background: #f0f2ff;
+  padding: 4rem 0rem;
+  background: #f0f2ff;
+  margin: 4px auto;
+  width: 70%;
+  height: 94vh;
   }
   
   .skills-title {

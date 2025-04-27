@@ -1,0 +1,32 @@
+.footer {
+    background: linear-gradient(135deg, #6e8efb, #a777e3);
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 1rem;
+    box-shadow: 0 -2px 10px rgba(0,0,0,0.2);
+    margin-top: 50px;
+  }
+  
+  .scroll-to-top {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background: #d6b54e;
+    color: rgb(0, 0, 0);
+    border: none;
+    padding: 12px 16px;
+    font-size: 24px;
+    border-radius: 50%;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    cursor: pointer;
+    transition: background 0.3s ease, opacity 0.4s ease;
+    opacity: 0.8;
+    z-index: 1000;
+  }
+  
+  .scroll-to-top:hover {
+    background: #d6eaea;
+    opacity: 1;
+  }
+  

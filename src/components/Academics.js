@@ -34,7 +34,7 @@ const academicsData = [
 
 const Academics = () => {
   return (
-    <section className="academics-section" id="acedemics">
+    <section className="academics-section" id="academics">
       <h2 className="academics-title">Academics</h2>
       <div className="timeline">
         {academicsData.map((item, index) => (

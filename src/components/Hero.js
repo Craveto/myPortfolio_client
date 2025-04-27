@@ -6,7 +6,7 @@ import { FaLinkedin, FaEnvelope, FaCode } from 'react-icons/fa';
 
 const Hero = () => {
   return (
-    <section className="hero">
+    <section className="hero" id="home">
 
       {/* <ParticlesBackground /> */}
       <div className="hero-container">
