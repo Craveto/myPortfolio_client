@@ -9,7 +9,7 @@ const Navbar = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [isPopupOpen, setIsPopupOpen] = useState(false);
 
-  const navItems = ['Home', 'Contact', 'Github', 'Projects', 'Academics'];
+  const navItems = ['Home', 'Contact', 'Skills', 'Projects', 'Academics'];
 
   const handleNavClick = (item) => {
     if (item === 'Contact') {
