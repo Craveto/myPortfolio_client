@@ -101,6 +101,12 @@
     font-size: 2rem;
   }
 
+  .projects {
+    width: 85%;
+    margin: 4px auto;
+    padding: 0;
+  }
+
   .project-card {
     min-width: 90%;
     max-width: 90%;
@@ -110,4 +116,6 @@
   .slider-track {
     gap: 1rem;
   }
+
+
 }

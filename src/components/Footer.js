@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import './Footer.css';
+import { FaGithub, FaLinkedin, FaTwitter } from 'react-icons/fa';  // Add social media icons
 
 const Footer = () => {
   const [showButton, setShowButton] = useState(false);
@@ -7,7 +8,7 @@ const Footer = () => {
   // Detect scroll position
   useEffect(() => {
     const handleScroll = () => {
-      if (window.pageYOffset > 300) {  // Show after scrolling 300px
+      if (window.pageYOffset > 300) {
         setShowButton(true);
       } else {
         setShowButton(false);
@@ -32,10 +33,25 @@ const Footer = () => {
   return (
     <>
       <footer className="footer">
-        <p>© {new Date().getFullYear()} Snehal Dighore. All rights reserved.</p>
+        <div className="footer-content">
+          <p className="footer-text">
+            © {new Date().getFullYear()} Snehal Dighore. All rights reserved.
+          </p>
+          <div className="social-icons">
+            <a href="https://github.com" target="_blank" rel="noopener noreferrer">
+              <FaGithub />
+            </a>
+            <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer">
+              <FaLinkedin />
+            </a>
+            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
+              <FaTwitter />
+            </a>
+          </div>
+        </div>
       </footer>
 
-      {showButton && ( // Show button only when scrolled
+      {showButton && (
         <button className="scroll-to-top" onClick={scrollToTop}>
           ↑
         </button>

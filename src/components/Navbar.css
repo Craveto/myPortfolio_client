@@ -91,6 +91,7 @@
   
     .nav-list.mobile-show {
       display: flex;
+      width: auto;
     }
   }
   
