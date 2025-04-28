@@ -38,10 +38,10 @@ const Footer = () => {
             © {new Date().getFullYear()} Snehal Dighore. All rights reserved.
           </p>
           <div className="social-icons">
-            <a href="https://github.com" target="_blank" rel="noopener noreferrer">
+            <a href="https://github.com/Craveto" target="_blank" rel="noopener noreferrer">
               <FaGithub />
             </a>
-            <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.linkedin.com/in/snehal-dighore-339242244" target="_blank" rel="noopener noreferrer">
               <FaLinkedin />
             </a>
             <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">

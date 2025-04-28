@@ -6,8 +6,8 @@ const projectList = [
     title: 'Expense Tracker',
     description: 'Track your income and expenses using the MERN stack.',
     tech: ['React', 'Node.js', 'MongoDB'],
-    img: require('./img/project.png'),
-    live: '#',
+    img: require('./img/ExpTracker.png'),
+    live: 'https://exptracker-beige.vercel.app/',
     github: '#'
   },
   {

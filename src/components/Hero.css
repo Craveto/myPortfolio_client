@@ -189,11 +189,13 @@
 @media (max-width: 768px) {
   .hero {
     min-height: 75vh;
+    margin: 23px 0 0 0;
   }
 
   .hero-container {
     flex-direction: column-reverse;
     /* Profile photo on top */
+    gap: 4rem;
     align-items: center;
     justify-content: center;
     text-align: center;
@@ -203,6 +205,7 @@
   .hero-text,
   .hero-image {
     width: 100%;
+    align-items: stretch;
   }
 
   .buttons {
